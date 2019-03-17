@@ -1,4 +1,4 @@
-package com.mateacademy.concurrentCollections;
+package com.mateacademy.concurrentcollections;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

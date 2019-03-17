@@ -1,15 +1,19 @@
 package com.mateacademy.singleton;
 
 public class Singleton {
+    private static Singleton instance;
+
     private Singleton() {
     }
-
-    private static class SingletonHolder {
-        private static final Singleton instance = new Singleton();
-    }
-
     public static Singleton getInstance() {
-        return SingletonHolder.instance;
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
     }
 
     @Override

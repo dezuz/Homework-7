@@ -2,9 +2,7 @@ package com.mateacademy.atomics;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static java.lang.Thread.sleep;
-
-public class AtomicIntegerHelper implements Runnable {
+public class AtomicIntegerHelper extends Thread {
     private AtomicInteger atomicInteger;
     private int x;
 

@@ -11,8 +11,8 @@ public class AtomicIntegerApp {
         AtomicIntegerHelper atomicIntegerHelper = new AtomicIntegerHelper(atomicInteger);
         AtomicIntegerHelper atomicIntegerHelper2 = new AtomicIntegerHelper(atomicInteger);
         AtomicIntegerHelper atomicIntegerHelper3 = new AtomicIntegerHelper(atomicInteger);
-        atomicIntegerHelper.run();
-        atomicIntegerHelper2.run();
-        atomicIntegerHelper3.run();
+        atomicIntegerHelper.start();
+        atomicIntegerHelper2.start();
+        atomicIntegerHelper3.start();
     }
 }
